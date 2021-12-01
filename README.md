@@ -1,2 +1,2 @@
-# noud
-A small library for node based systems
+# Noud
+A c++ libary for node based systems

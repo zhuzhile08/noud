@@ -1,2 +1,2 @@
 # Noud
-A c++ libary for node based systems
+A C++ libary for node based systems

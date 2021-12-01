@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Programming-Related\C++ Projects\Libraries\Noud\build\CMakeFiles\5208a6f0b0b14a3930228347266f58ac\Experimental.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Programming-Related\C++ Projects\Libraries\Noud\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Programming-Related\C++ Projects\Libraries\Noud\build\CMakeFiles\Experimental" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{42B04FF3-B5CB-3110-B251-6DA0E9C531E9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

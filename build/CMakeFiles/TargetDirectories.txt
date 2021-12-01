@@ -1,0 +1,4 @@
+D:/Programming-Related/C++ Projects/Libraries/Noud/build/CMakeFiles/PACKAGE.dir
+D:/Programming-Related/C++ Projects/Libraries/Noud/build/CMakeFiles/Noud.dir
+D:/Programming-Related/C++ Projects/Libraries/Noud/build/CMakeFiles/ALL_BUILD.dir
+D:/Programming-Related/C++ Projects/Libraries/Noud/build/CMakeFiles/ZERO_CHECK.dir

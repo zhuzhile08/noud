@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(Noud VERSION 0.1.0)
+project(Noud VERSION 1.0.0)
 
-add_executable(Noud main.cpp src/noud.cpp)
+set(CMAKE_BUILD_TYPE Debug)
+
+add_library(Noud Noud.cpp)
+set_target_properties(Noud PROPERTIES COMPILE_FLAGS "-m32" LINK_FLAGS "-m32")

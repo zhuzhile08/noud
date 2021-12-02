@@ -12,7 +12,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "MinSizeRel/Noud.lib"
+			"path" : "Debug/Noud.lib"
 		}
 	],
 	"backtrace" : 1,
@@ -45,7 +45,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
 				},
 				{
 					"fragment" : "-m32"
@@ -87,7 +87,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Noud.cpp",
+			"path" : "src/noud.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

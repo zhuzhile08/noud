@@ -261,7 +261,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Programming-Related\C++ Projects\Libraries\Noud\Noud.cpp" />
+    <ClCompile Include="D:\Programming-Related\C++ Projects\Libraries\Noud\src\noud.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:\Programming-Related\C++ Projects\Libraries\Noud\build\ZERO_CHECK.vcxproj">

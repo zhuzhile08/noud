@@ -4,9 +4,9 @@ namespace noud {
     Node::Node(Node* parent) : parent(parent) { }
 
     void Node::destroy() {
-        for (auto [key, child] : children) {
-            child->parent = parent;
-            children.erase(key);
+        for (std::pair<std::string, Node*> pair : children) {
+            pair.second->parent = parent;
+            children.erase(pair.first);
         }
         delete parent;
     }

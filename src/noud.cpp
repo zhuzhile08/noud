@@ -1,7 +1,7 @@
 #include <noud.h>
 
 namespace noud {
-    Node::Node(Node* parent, std::string name = "node") : parent(parent), name(name) { }
+    Node::Node(Node* parent, std::string name) : parent(parent), name(name) { }
 
     void Node::destroy() {
         while (!children.empty()) {

@@ -11,14 +11,12 @@ Node::~Node() {
 }
 
 void Node::destroy() {
-    while (!children.empty()) {
-        children.end().second().parent = parent;
-    }
+    for (auto& [name, child] : children) child->set_parent(parent);
 }
 
 void Node::add_child(Node* newChild) {
     newChild->parent = this;
-    children.insert({newChild->get_name(), newChild});
+    children[newChild->get_name()] = newChild;
 }
 
 void Node::add_to_beginning(Node root) noexcept {
@@ -35,12 +33,8 @@ void Node::add_between(Node* back) {
     add_child(back);
 }
 
-constexpr Node* Node::get_child_by_index(const int index) const noexcept {
-    return children.at(index).second();
-}
-
 constexpr Node* Node::get_child_by_name(const std::string name) const {
-    return children.find(name);
+    return children.at(name);
 }
 
 void Node::set_parent(Node* newParent) noexcept {

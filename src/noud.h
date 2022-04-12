@@ -70,14 +70,6 @@ public:
     void add_between(Node* newParent);
 
     /**
-     * @brief get the child by index
-     * 
-     * @param index index of the child to find
-     * @return Node* 
-     */
-    constexpr Node* get_child_by_index(const int index) const noexcept;
-
-    /**
      * @brief get the child by name
      * 
      * @param name name of the child to find

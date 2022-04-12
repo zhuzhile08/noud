@@ -13,7 +13,7 @@
 #pragma once
 
 #include <string>
-#include <vector>
+#include <unordered_map>
 
 namespace noud {
 
@@ -21,7 +21,7 @@ namespace noud {
 class Node {
 public:
     /**
-     * @brief defautl constructor of the Node object. has no use
+     * @brief default constructor of the Node object. has no use
      */
     Node();
     /**
@@ -52,14 +52,14 @@ public:
      * 
      * @param root the node that is going to be behind this one
      */
-    void add_to_beginning(Node root);
+    void add_to_beginning(Node root) noexcept;
 
     /**
      * @brief add node to another node
      * 
      * @param newParent the new parent of the node
      */
-    void add_to(Node* newParent);
+    void add_to(Node* newParent) noexcept;
 
     /**
      * @brief add node between two nodes
@@ -75,50 +75,49 @@ public:
      * @param index index of the child to find
      * @return Node* 
      */
-    Node* get_child_by_index(const int index) const;
+    constexpr Node* get_child_by_index(const int index) const noexcept;
 
     /**
      * @brief get the child by name
-     * @brief it's very inefficient, since it has to loop though every child until it finds the desired node
      * 
      * @param name name of the child to find
      * @return Node* 
      */
-    Node* get_child_by_name(const std::string name) const;
+    constexpr Node* get_child_by_name(const std::string name) const;
 
     /**
      * @brief set the parent
      * 
      * @param newParent the parent
      */
-    void set_parent(Node* newParent);
+    void set_parent(Node* newParent) noexcept;
 
     /**
      * @brief get the children
      * 
-     * @return std::vector <Node*> 
+     * @return std::unordered_map <std::string, Node*>
      */
-    std::vector <Node*> get_children() const;
+    constexpr std::unordered_map <std::string, Node*> get_children() const noexcept;
 
     /**
      * @brief get the name
      * 
      * @return std::string 
      */
-    std::string get_name() const;
+    constexpr std::string get_name() const noexcept;
 
     /**
      * @brief get the parent
      * 
      * @return Node* 
      */
-    Node* get_parent() const;
+    constexpr Node* get_parent() const noexcept;
 
 protected:
     std::string name = "node";
 
     Node* parent = NULL;
-    std::vector <Node*> children;
+    std::unordered_map <std::string, Node*> children;
 };
 
 } // namespace noud

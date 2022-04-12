@@ -75,7 +75,7 @@ public:
      * @param name name of the child to find
      * @return Node* 
      */
-    constexpr Node* get_child_by_name(const std::string name) const;
+    Node* get_child_by_name(const std::string name) const;
 
     /**
      * @brief set the parent
@@ -89,21 +89,21 @@ public:
      * 
      * @return std::unordered_map <std::string, Node*>
      */
-    constexpr std::unordered_map <std::string, Node*> get_children() const noexcept;
+    std::unordered_map <std::string, Node*> get_children() const noexcept;
 
     /**
      * @brief get the name
      * 
      * @return std::string 
      */
-    constexpr std::string get_name() const noexcept;
+    std::string get_name() const noexcept;
 
     /**
      * @brief get the parent
      * 
      * @return Node* 
      */
-    constexpr Node* get_parent() const noexcept;
+    Node* get_parent() const noexcept;
 
 protected:
     std::string name = "node";

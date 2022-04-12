@@ -33,7 +33,7 @@ void Node::add_between(Node* back) {
     add_child(back);
 }
 
-constexpr Node* Node::get_child_by_name(const std::string name) const {
+Node* Node::get_child_by_name(const std::string name) const {
     return children.at(name);
 }
 
@@ -41,15 +41,15 @@ void Node::set_parent(Node* newParent) noexcept {
     parent = newParent;
 }
 
-constexpr std::unordered_map <std::string, Node*> Node::get_children() const noexcept {
+std::unordered_map <std::string, Node*> Node::get_children() const noexcept {
     return children;
 }
 
-constexpr std::string Node::get_name() const noexcept {
+std::string Node::get_name() const noexcept {
     return name;
 }
 
-constexpr Node* Node::get_parent() const noexcept {
+Node* Node::get_parent() const noexcept {
     return parent;
 }
 
